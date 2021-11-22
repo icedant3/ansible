@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+   - name: Set up multiple authorized keys
+     authorized_key:
+        user: root
+        state: present
+        key: "{{ lookup('/root/multiplekeys') }}"

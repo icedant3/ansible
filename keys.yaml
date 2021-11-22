@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+          
+   - name: Set authorized key in alternate location
+     authorized_key:
+       user: root
+       state: absent       
+       path: /root/.ssh/authorized_keys
+       key:  "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA9fWdDRtD/crv8ox8I8dB2cPE8rRRh9GXUxNc/YuCUZm9tEMeF6LD3Mzb3PrRM0W8rF6jn3oP9HKPOhCaVIf16F3I3oqHavMJJP24bkex9Pf37kB/2O3nNfXPAnDgd92wwmxZOcTgh6+tH3lfoXxFIWbYCIUreTCEygPM5wHsOkyTTFRzc46NUED88ENZN1ifrV4WgD60j4BvD1iA63P6/BfcaBv2arFDOuPnXditRqXArUfnH1QREPZobUcK3JprPJSFGuzLURCoQtKuujDZkD8vO5DPf/AeN1G9jslQ6n8YfPFIFIq6QiQOPmEYp6qlycn/B2IlC7lru7FNybflrw== d.vacari@mivocloud.com
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJPAaD8dUCtc69/JVDB8miYkGcd5ZMDeB6CW/IaY6SiRrqhW9LflTp4vlV0R+vhAPvNlHC3rPCXxH8/wg0SRRTsi+raqAATAnutuzxr1OIVHrWtOIzcMMKRn39LvGb0axCUmXyNKZdpY2VIPiBJq98gbXjYkWcvIfjee12BkeoA+mIFstWD0waht2EifrP4fquFQDIBRGpCdzIm3gWADvNka1C/mTeGS4HzJN57oKDzV0EmXN8KrxRGpDqsDbi2cOBzYT9qdjvPcboEtduLf0UHrm3t7RlfF6e6jkpPLNoKOqPSI9sPvLzMjNoIe1YpgOdnUyR2o1j7+rQtRcwlR4nVcB5pckIdI1UWmR/jJhJvfdQnskfiR9HjS1hZqnL1+IqtC7sTjlVHL3RwixE5V6OEiACFrZMwGLB/zH6PKDaAdZphOzG33LKZOkVBHEjR/wC2m+WAQJg3t5XTj6HOwFlBABitvLASADCny8owbQQgs67mgIph91L8fB66Oebq9M= i.bantis@mivocloud.com
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2x5EOeKAjW3E85KvrmmPsjzzKBhsKni10EARVa/M/t9ClEg0Dam4WwFh0ZH8jf9FomVN7ThpXQEwnER8aEHzJouE/qoXN69VqwlICPvLAlqOQaK5XqfT6aBVre4ZMWgpooUsZ7DllwlIx2pAc7XE/k72RiIjdr0tzdDwDRlgP65JrGVshFhZnEk8mbdktwtiQhcp1QV8UnDqF8+p+1UmbXkWvT/IWjT6PJobbyB28Syz16kHj
+wsLWYz1VJkAps+0D9yS92Ip15GRRlnd85XWptm6MzpH5e1bqQAJYGv2sCkdM+PTf5+xqzlhIUr4jMe0D8jOtOGxWyash+OPtAL4j i.mamolea@mivocloud.com
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsqRotMqwTmHOUan0JPNNnD2Nmq+mUAVDLGlJbZdoDkaGCkN4Oj3LzadXsZx4YCdLhwOiyQSe7Jm50hYDM7pZJu/M1RhRmszKkgeuLJYCzs2HkS4uuzknLFfmMbOob3i2T6H3ltOZSgzAUjmweq4yEGaa6NQl0/f0sh+/RparTGBCe/qdKWYylMOJyfxtGHNZnQCEsaZXN8xB84gOfGjijxN0+GBmyNl3IObbP3Sz4Pn3k5ba2H3hguJ4ZusBehIu41v3njJYNkOqs21xo318qaqBLD1OL3dgGImXAPQfPuJ2OtH7P0ykdf3q/ZpiQs2oy0NS8SKgIM0T/Mrumguev g.buga@mivocloud.com"      
