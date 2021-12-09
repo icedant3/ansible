@@ -1,2 +1,2 @@
-194.180.174.84
-5.181.156.136
+194.180.174.84 apache_package=apache2 php_package=libapache2-mod-php
+5.181.156.136  apache_package=httpd php_package=php
